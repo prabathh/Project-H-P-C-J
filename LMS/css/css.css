@@ -90,15 +90,21 @@ mini{
 .widget{
   background: #f0f0f0;
   height: 100px;
-  width: 300px;
+  width: 250px;
   position: absolute;
   top: 99px;
-  left: 59.5%;
+  left: 61.5%;
 }
 
 .widget form{
   position: absolute;
   top: 15px;
+
+}
+
+.widget form h3{
+  font-family: 'Titillium Web', sans-serif;
+  margin: 5px auto 5px auto;
 }
 
 .content{
@@ -122,18 +128,27 @@ mini{
 .widget-error{
   background: #f0f0f0;
   height: 100px;
-  width: 300px;
+  width: 250px;
   position: absolute;
   top: 400px;
-  left: 40%;
+  left: 45.3%;
+}
 
+.widget-error form td{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.widget-error h3{
+  font-family: 'Titillium Web', sans-serif;
+  margin: 5px auto 5px auto;
 }
 
 .errors{
   position: absolute;
   top: 370px;
-  left: 40.5%;
-
+  left: 46.3%;
+  color: red;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .footer{

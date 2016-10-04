@@ -1,4 +1,10 @@
 <div class="widget">
+  <?php
+    
+
+  ?>
+
+
   <form class="login" action="logout.php" method="post">
     <table>
       <tr>

@@ -1,6 +1,8 @@
 
 <div class="widget">
   <form class="login" action="login.php" method="post">
+    <h3>Login as a User</h3>
+    <hr>
     <table>
       <tr>
         <td>

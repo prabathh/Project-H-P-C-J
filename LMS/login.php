@@ -7,18 +7,18 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
     if (empty($username) == true || empty($password) == true) {
-      $errors[] = 'enter username & password';
+      $errors[] = '*Enter username and password';
     }
     else if (user_exist($username) == false){
-      $errors[] = 'user does not exist';
+      $errors[] = '*You are not registerd';
     }
     else if (user_active($username) == false){
-      $errors[] = 'user not active';
+      $errors[] = '*User account not active';
     }
     else{
       $login = login($username, $password);
       if ($login == false) {
-        $errors[] = 'username password does not match';
+        $errors[] = '*Username password does not match';
       }
       else{
         $_SESSION['user_id'] = $login;

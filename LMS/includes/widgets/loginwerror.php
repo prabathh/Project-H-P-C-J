@@ -1,5 +1,7 @@
 
 <div class="widget-error">
+  <h3>Login as a User</h3>
+  <hr>
   <form class="login" action="login.php" method="post">
     <table align="center">
       <tr>
