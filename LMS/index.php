@@ -6,7 +6,6 @@
     <?php include 'includes/header.php'; ?>
 
     <div class="content">
-
       <?php
       if (logged_in() === true){
         include 'includes/widgets/loggedinw.php';

@@ -3,10 +3,15 @@
     <table>
       <tr>
         <td>
-          <h3><mini>Welcome back</mini> <?php echo $user_data['first_name'] ?>!</h3>
+          <h3><mini>Welcome back</mini> <?php echo $user_data['user_name'] ?>!</h3>
           <hr>
         </td>
         <td></td>
+      </tr>
+      <tr>
+        <td>
+          <a id="cb" href="userprofile.php">Jump To Profile</a>
+        </td>
       </tr>
       <tr>
         <td>
