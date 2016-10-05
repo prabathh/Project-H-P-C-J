@@ -6,7 +6,7 @@ so far what we have
 
 >logo.jpg
 
->test data base with test data
+>test database with test data
 
 >user log in & session handeling (using that test data)
 
