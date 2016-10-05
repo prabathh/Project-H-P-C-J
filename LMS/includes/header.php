@@ -1,6 +1,9 @@
 <div class="header-cont">
   <div class="header">
-    <h1>EDU<mini>link</mini></h1>
+    <img src="includes\Images\logo.jpg">
+    <h2>University </h2>
+    <h4>of</h4>
+   <h1> Westeros</h1>
     <div class="header-list">
       <ul>
         <li><a href="index.php">HOME</a></li>
@@ -10,4 +13,8 @@
       </ul>
     </div>
   </div>
+  <div class="header-hr">
+     <hr>
+  </div>
+ 
 </div>

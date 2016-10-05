@@ -1,6 +1,6 @@
 <p class="footer">
-  EDULINK INC &copy; No 309, High Level Road, Colombo 05, Sri Lanka
+  University of Westeros &copy; 2000, House Stark Castle Road, North Winterfell, Westeros.
   <br>
-  Telephone: +94(11) 567 2545|5673535 - Email:info@edulink.lk
-</p>
+  Telephone: +94(00) 567 2545|5673535 - Email:info@uow.com
+</p>	
 </div>
