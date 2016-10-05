@@ -18,3 +18,7 @@ so far what we have
 
 >some css update :P
 
+>viwe profile page
+
+>edit profile (html css only)
+
