@@ -7,5 +7,17 @@ function sanitize  ($data){
   return $data;
 }
 
+function protected_page(){
+  if (logged_in() === false){
+    header ('Location: ruonly.php');
+    exit();
+  }
+}
 
+function logged_in_redirect(){
+  if (logged_in() === true){
+    header('Location: index.php');
+  }
+
+}
  ?>

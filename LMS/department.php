@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-<?php include 'core/init.php';?>
-  <?php include 'includes/head.php'; ?>
+<?php include 'core/init.php';
+  protected_page();
+  include 'includes/head.php'; ?>
   <body>
     <?php include 'includes/header.php'; ?>
 

@@ -128,10 +128,10 @@ mini{
 .widget-error{
   background: #f0f0f0;
   height: 100px;
-  width: 250px;
+  width: 400px;
   position: absolute;
   top: 400px;
-  left: 45.3%;
+  left: 40%;
 }
 
 .widget-error form td{
@@ -145,10 +145,28 @@ mini{
 
 .errors{
   position: absolute;
-  top: 370px;
-  left: 46.3%;
+  top: 570px;
+  left: 40%;
   color: red;
   font-family: 'Titillium Web', sans-serif;
+}
+
+.widget-change-password{
+  background: #f0f0f0;
+  height: 100px;
+  width: 400px;
+  position: absolute;
+  top: 400px;
+  left: 40%;
+}
+
+.widget-change-password form td{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.widget-change-password h3{
+  font-family: 'Titillium Web', sans-serif;
+  margin: 5px auto 5px auto;
 }
 
 .footer{

@@ -1,5 +1,6 @@
 <?php
   include 'core/init.php';
+  logged_in_redirect();
   include 'includes/head.php';
   include 'includes/header.php';
   $username = $password = "";
@@ -7,18 +8,18 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
     if (empty($username) == true || empty($password) == true) {
-      $errors[] = '*Enter username and password';
+      $errors[1] = '*Enter username and password';
     }
     else if (user_exist($username) == false){
-      $errors[] = '*You are not registerd';
+      $errors[1] = '*You are not registerd';
     }
     else if (user_active($username) == false){
-      $errors[] = '*User account not active';
+      $errors[1] = '*User account not active';
     }
     else{
       $login = login($username, $password);
       if ($login == false) {
-        $errors[] = '*Username password does not match';
+        $errors[1] = '*Username password does not match';
       }
       else{
         $_SESSION['user_id'] = $login;
@@ -38,7 +39,7 @@
       ?>
   </div>
   <div class="errors">
-    <?php echo $errors[0]; ?>
+    <?php echo $errors[1]; ?>
   </div>
   <?php
 
