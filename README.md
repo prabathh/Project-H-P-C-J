@@ -12,7 +12,7 @@ so far what we have
 
 >logout
 
->logged user only permision on some pages
+>"logged user only" permision on some pages
 
 >change passsword
 
