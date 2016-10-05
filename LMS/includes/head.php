@@ -1,6 +1,6 @@
 <head>
   	<title>LMS - University of Westeros</title>
- 	<link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
+ 	  <link href="https://fonts.googleapis.com/css?family=Istok+Web|Kaushan+Script|Titillium+Web" rel="stylesheet">
   	<link rel="stylesheet" href="css/css.css" media="screen" title="no title">
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="LMS, Leaning, Management, System, Virtual-Learning, Distant-Learning">
