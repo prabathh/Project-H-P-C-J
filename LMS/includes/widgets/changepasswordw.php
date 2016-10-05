@@ -32,7 +32,7 @@
 
           </td>
           <td>
-            <input type="submit" name="sub" value="Change">
+            <input id="cb" type="submit" name="sub" value="Change">
           </td>
         </tr>
     </table>

@@ -152,11 +152,15 @@ div{
 }
 
 .widget form h3{
+  display: block;
+  font-size: 1.6em;
+  font-weight: normal;
   font-family: 'Titillium Web', sans-serif;
   margin: 5px auto 5px auto;
 }
 
 .content{
+  font-family: 'Titillium Web', sans-serif; 
   width: 960px;
   background: #ffffff;
   border: 1px solid #ccc;
@@ -188,6 +192,9 @@ div{
 }
 
 .widget-error h3{
+  display: block;
+  font-size: 1.6em;
+  font-weight: normal;
   font-family: 'Titillium Web', sans-serif;
   margin: 5px auto 5px auto;
 }
@@ -198,12 +205,6 @@ div{
   left: 40%;
   color: red;
   font-family: 'Titillium Web', sans-serif;
-}
-
-.footer{
-  text-align: center;
-  font-family: 'Istok Web',calibri, Arial,tahoma, Helvetica, sans-serif;
-  color: #0cbdaa;
 }
 
 .widget-change-password{
@@ -220,6 +221,51 @@ div{
 }
 
 .widget-change-password h3{
+  display: block;
+  font-size: 1.6em;
+  font-weight: normal;
   font-family: 'Titillium Web', sans-serif;
   margin: 5px auto 5px auto;
+}
+
+#cb:link, #cb:visited {
+  background-color: white;
+  color: black;
+  border: 1.5px solid #242c42;
+  padding: 2px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-left:0px;
+}
+
+
+#cb:hover, #cb:active {
+  background-color: #242c42;
+  color: white;
+}
+
+#cb{
+  background-color: white;
+  color: black;
+  border: 1.5px solid #242c42;
+  padding: 2px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-left:0px;
+}
+
+
+#cb:hover {
+  background-color: #242c42;
+  color: white;
+}
+
+.footer{
+  text-align: center;
+  font-family: 'Istok Web',calibri, Arial,tahoma, Helvetica, sans-serif;
+  color: #0cbdaa;
 }

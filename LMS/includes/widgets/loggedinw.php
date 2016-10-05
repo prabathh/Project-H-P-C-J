@@ -3,19 +3,19 @@
     <table>
       <tr>
         <td>
-          <h3>welcome back <?php echo $user_data['first_name'] ?></h3>
+          <h3><mini>Welcome back</mini> <?php echo $user_data['first_name'] ?>!</h3>
           <hr>
         </td>
         <td></td>
       </tr>
       <tr>
         <td>
-          <a href="changepassword.php">Change Password</a>
+          <a id="cb" href="changepassword.php">Change Password</a>
         </td>
       </tr>
       <tr>
         <td>
-          <input type="submit" name="logout" value="Logout">
+          <a id="cb" href="logout.php">Logout</a>
         </td>
       </tr>
     </table>
