@@ -544,7 +544,7 @@ margin-top: -19px;
 .item-list ul li span{
     display: block;
     position: relative;
-    z-index: 300;
+    z-index: 0;
     margin-left: -24px;}
 
 #list-img2{
