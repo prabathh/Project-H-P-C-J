@@ -2,19 +2,16 @@ body{
   margin: 0px;
   background: #242c42;
 }
-
 div{
-  border: 0px solid red;
+  border: 0px solid red
 }
-
 .header-cont{
   position: fixed;
   top: 0px;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   z-index: 1;
 }
-
 .header{
   width: 960px;
   height: 98px;
@@ -105,8 +102,8 @@ div{
 .header-list{
   z-index: 2;
   position: absolute;
-  top: 60%;
-  left: 450px;
+  top: 45%;
+  left: 404px;
   right: 0;
   font-size: 15px;
   width: auto;
@@ -119,10 +116,11 @@ div{
 }
 .header-list ul{
   list-style: none;
+  padding : 4px 0px
 }
 .header-list ul li{
   float: left;
-  padding: 0px 20px;
+  padding: 1px 5px;
   text-align: center;
 }
 
@@ -137,16 +135,20 @@ div{
 }
 
 .widget{
-  height: 100px;
-  width: 300px;
-  position: absolute;
-  top: 102px;
-  left: 60.57%;
-}
+    background: black;
+    height: 100px;
+    width: 240px;
+    position: absolute;
+    top: 112px;
+    left: 66.5%;
+    color: white;}
 
 .widget form{
-  position: absolute;
-  top: 15px;
+    position: absolute;
+    top: 15px;
+    background-color: black;
+    color: white;
+    right: -8px;
 }
 
 .widget form td{
@@ -155,26 +157,20 @@ div{
 
 .widget form h3{
   display: block;
-  font-size: 1.275em;
+  font-size: 23px;
   font-weight: normal;
   font-family: 'Titillium Web', sans-serif;
   margin: 5px auto 5px auto;
 }
 
 .content{
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', sans-serif; 
   width: 960px;
-  background: #f0f0f0;
+  background: #ffffff;
   border: 1px solid #ccc;
   height: 2000px;
   margin: 96px auto 0px auto;
   top: 5px;
-}
-
-.content h1#username{
-  float: left;
-  margin: -5px -183px 15px 82px;
-  font-size: 2.2em;
 }
 
 .error-content{
@@ -237,58 +233,212 @@ div{
 }
 
 #cb:link, #cb:visited {
-  float: left;
   background-color: white;
   color: black;
-  border: 1.5px solid #0cbdaa;
+  border: 1.5px solid #242c42;
   padding: 2px 4px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
   margin-left:0px;
+  border-radius: 12px;
 }
 
 
 #cb:hover, #cb:active {
   background-color: #242c42;
   color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: translateY(4px);
 }
 
 #cb{
-  background-color: white;
-  color: black;
-  border: 1.5px solid #0cbdaa;
-  padding: 2px 4px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin-left:0px;
+    background-color: black;
+    color: white;
+    border: 1.5px solid #e5b71c;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 0px;
+    border-radius: 7px;
 }
 
 
 #cb:hover {
   background-color: #242c42;
   color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
-.pro-pic{
-  margin: 20px 10px;
-  height: 200px;
-  width: 150px;
-  background-color: #242c42;
-}
-
-.user-data-form{
-  float: left;
-  margin-top: 74px;
-}
-
-.user-data-form td{padding: 11px 27px;}
 
 .footer{
   text-align: center;
   font-family: 'Istok Web',calibri, Arial,tahoma, Helvetica, sans-serif;
   color: #0cbdaa;
+}
+
+
+.headerButton {
+  display: inline-block;
+  border-radius: 21px;
+  background-color: #E5B71C;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 6px;
+  width: 117px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.headerButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.headerButton span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.headerButton:hover span {
+  padding-right: 10px;
+}
+
+.headerButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+#department {
+  display: inline-block;
+  border-radius: 21px;
+  background-color: #E5B71C;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 6px;
+  width: 117px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 6px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 3px 12px;
+    z-index: 1;
+    background-color: #ffffff;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #E6BC0F}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.positioning-text {
+    font-weight: bold;
+    font-family: arial,helvetica,sans-serif;
+
+  }
+
+.positioning-text p {
+    margin-bottom: 1em;
+}
+
+.positioning-text strong {
+    font-size: 1.6em;
+}
+
+.positioning-text .no-bold {
+    font-weight: normal;
+}
+
+.homepage-headline {
+    font-size: 30px;
+    margin: 20px 0;
+    display: block;
+}
+
+.yellow {
+    color: #FCD450;
+    font-family: arial,helvetica,sans-serif;
+}
+
+#positioning-text {
+    float: right;
+    width: 18.3em;
+    min-width: 220px;
+}
+
+.featured1{
+    height: 178px;
+    width: 214px;
+    margin-bottom: 19%;
+    margin-top: 20px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: 0px auto;
+    top: 99px;
+  }
+
+
+
+.featured-front {
+    width: 200px;
+    height: 100px;
+    border: 0px solid #ccc;
+  }
+
+
+  .header-hr hr {
+    display: block;
+    -webkit-margin-before: 0.2em;
+    -webkit-margin-after: 0.1em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;}
+
+    .front-wide {
+    border: 1px solid white;
+    height: 200px;
+    width: 99.9%;
+    margin-top: 9px;
+    background-color: black;
 }
