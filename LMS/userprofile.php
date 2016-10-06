@@ -68,7 +68,7 @@
               <td>
               </td>
               <td>
-                 <a id="cb" href="edit_user_data.php">Edit Profile</a>
+                 <a id="cb" href="edit.php">Edit Profile</a>
               </td>
             </tr>
           </table>
