@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
-<?php include 'core/init.php';?>
+  <?php include 'core/init.php';?>
   <?php include 'includes/head.php'; ?>
   <body>
     <?php include 'includes/header.php'; ?>
 
-
     <div class="content">
 
-      <div class="front-wide">
-      
+    <div class="front-wide">
       <?php
       if (logged_in() === true){
         include 'includes/widgets/loggedinw.php';
@@ -18,11 +16,12 @@
       }
       ?>
 
-      <h1>CONTACT PAGE</h1>
       </div>
-    </div>
+
+      <h1> Strategic Plans Page</h1>
+      </div>
 
 
-    <?php include 'includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
   </body>
 </html>
