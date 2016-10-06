@@ -629,3 +629,35 @@ margin-left: 37px;
 .featured2 img:active {
   color: red;
 }
+
+
+.login #cb2{
+  margin-left: -73px;
+}
+
+#cb2:hover, #cb2:active {
+  background-color: #242c42;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: translateY(4px);
+}
+
+#cb2{
+    background-color: white;
+    color: black;
+    border: 1.5px solid #e5b71c;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 0px;
+    border-radius: 15px;
+}
+
+
+#cb2:hover {
+  background-color: #242c42;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
