@@ -18,7 +18,7 @@ if (empty($_POST) === false){
       $errors [3] = 'Password must be greater than 6 characters';
     }else{
       change_password($session_user_id, $_POST['new_password']);
-      header ('Location: changepassword.php?sucsess');
+      header ('Location: sucsess.php');
     }
   }
   else{
