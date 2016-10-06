@@ -22,3 +22,5 @@ so far what we have
 
 >edit profile (html css only)
 
+>profile edit not working
+
