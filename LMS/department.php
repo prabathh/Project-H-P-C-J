@@ -7,6 +7,7 @@
     <?php include 'includes/header.php'; ?>
 
     <div class="content">
+      <div class="front-wide">
 
       <?php
       if (logged_in() === true){
@@ -17,6 +18,7 @@
       ?>
 
       <h1>DEPARTMENT PAGE</h1>
+      </div>
     </div>
 
     <?php include 'includes/footer.php'; ?>

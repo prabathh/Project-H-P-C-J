@@ -7,7 +7,7 @@
 
 
     <div class="content">
-
+        <div class="front-wide">
       <?php
       if (logged_in() === true){
         include 'includes/widgets/loggedinw.php';
@@ -17,6 +17,7 @@
       ?>
 
       <h1>NEWS PAGE</h1>
+      </div>
     </div>
 
 
