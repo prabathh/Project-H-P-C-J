@@ -5,7 +5,7 @@
     <table align="center">
       <tr>
         <td>
-          *Current Password
+          Current Password*
         </td>
         <td>
           <input type="password" name="password" value="">
@@ -13,7 +13,7 @@
         </tr>
         <tr>
           <td>
-            *New Password
+            New Password*
           </td>
           <td>
             <input type="password" name="new_password" value="">
@@ -21,7 +21,7 @@
         </tr>
         <tr>
           <td>
-            *New Password (again)
+            New Password (again)*
           </td>
           <td>
             <input type="password" name="password_again" value="">

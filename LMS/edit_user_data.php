@@ -4,7 +4,24 @@
   include 'core/init.php';
   protected_page();
 
-  
+    if (empty($_post) === false){
+      $list = array('user_name', 'email');
+      foreach ($_POST as $key => $value) {
+        if (empty($value) && in_array($key, $list) === true) {
+          $errors[2] ='*Marked fields are required';
+          break 1;
+        }
+      }
+      if (empty($errors[2]) === true) {
+        if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false){
+          $errors[2] ='not a vaild email address';
+        }else if(preg_match("/\\s/",$_POST['username'])){
+          $errors[2] ='username must not contain spaces';
+        }else if(user_exist($_POST['username'])){
+          $errors[2] ='username alredy exist';
+        }
+    }
+  }
   include 'includes/head.php';
   ?>
   <body>
@@ -25,8 +42,27 @@
       </div>
 
       <h1 id="username"><?php echo $user_data['first_name'] ?> <?php echo $user_data['last_name'] ?></h1>
+      <?php
+      if (empty($_POST) === false && empty($errors) === true) {
+        $update_data = array(
+                             'user_name' => $_POST['user_name'],
+                             'first_name' => $_POST['first_name'],
+                             'last_name' => $_POST['last_name'],
+                             'email' => $_POST['email'],
+                             'gender' => $_POST['gender']
+                             );
+        //update_user($update_data);
+        header('Location: userprofile.php');
+        exit();
+      } else if(empty($errors) === false){?>
+        <div class="errors">
+          <?php echo $errors[2]; ?>
+        </div><?php
+      }
+
+      ?>
         <div class="user-data-form">
-          <form class="" action="index.html" method="post">
+          <form class="" action="" method="post">
             <table>
               <tr>
                 <td>
@@ -72,14 +108,13 @@
                 <td>
                 </td>
                 <td>
-                   <input id="cb" type="button" name="submit" value="Save Changes">
+                   <input id="cb" type="submit" value="Save Changes">
                 </td>
               </tr>
             </table>
           </form>
         </div>
     </div>
-
     <?php include 'includes/footer.php'; ?>
   </body>
 </html>
