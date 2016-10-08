@@ -24,3 +24,4 @@ so far what we have
 
 >profile edit not working
 
+>profile editing working now
